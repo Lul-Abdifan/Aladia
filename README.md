@@ -20,8 +20,41 @@ yarn install
 bun install
 ```
 
-## Development Server
 
+
+## Screenshot
+
+##### Login Page
+
+![image](https://github.com/user-attachments/assets/2f032aeb-b67f-427f-81f3-754c43c33d6f)
+
+
+##### Registration Page
+![image](https://github.com/user-attachments/assets/8f9dbf28-9ac9-4a8f-bc73-eb4fb304d217)
+
+##### Reset Password Page
+
+![image](https://github.com/user-attachments/assets/37892404-818b-4759-a853-b3308b60ebee)
+
+
+##### Code or OTP verification
+
+![image](https://github.com/user-attachments/assets/29f16a57-ec51-4748-b722-c94db1b9a2bd)
+
+##### Reset Password  Page
+
+![image](https://github.com/user-attachments/assets/ac43f900-b7c0-4e02-adee-52c148f33d57)
+
+##### Our Education Page
+
+![image](https://github.com/user-attachments/assets/dbfddd77-f635-490e-83d3-2d353c73694f)
+
+
+
+
+
+
+## Development Server
 Start the development server on `http://localhost:3000`:
 
 ```bash
