@@ -20,16 +20,18 @@
         <div class="pt-8 text-medium">Confirm Password</div>
         <PasswordInput placeholder="**********" />
 
-        <Button
-          class="mt-12"
-          :bgColor="'bg-primary'"
-          :textColor="'text-white'"
-          :hoverBgColor="'bg-secondary'"
-          :size="'11'"
-          :rounded="'full'"
-        >
-          Sign Up
-        </Button>
+        <nuxt-link to="/education">
+          <Button
+            class="mt-12"
+            :bgColor="'bg-primary'"
+            :textColor="'text-white'"
+            :hoverBgColor="'bg-secondary'"
+            :size="'11'"
+            :rounded="'full'"
+          >
+            Sign Up
+          </Button>
+        </nuxt-link>
 
         <div class="pt-8 text-center">
           <span>Already have an account? </span>

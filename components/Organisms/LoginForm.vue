@@ -20,16 +20,18 @@
 
         <PasswordInput placeholder="**********" />
 
-        <Button
-          class="mt-large"
-          :bgColor="'bg-primary'"
-          :textColor="'text-white'"
-          :hoverBgColor="'bg-secondary'"
-          :size="'11'"
-          :rounded="'full'"
-        >
-          Login
-        </Button>
+        <nuxt-link to="/education">
+          <Button
+            class="mt-large"
+            :bgColor="'bg-primary'"
+            :textColor="'text-white'"
+            :hoverBgColor="'bg-secondary'"
+            :size="'11'"
+            :rounded="'full'"
+          >
+            Login
+          </Button>
+        </nuxt-link>
 
         <div class="pt-8 flex justify-between">
           <nuxt-link to="/auth/register" class="text-primary text-small">
