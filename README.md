@@ -1,4 +1,41 @@
-# Nuxt 3 Minimal Starter
+# MyAladia Platform part 1
+- Hello there, I have documented Demo Screenshots and Video, Storybook screenshots, and necessary documentation.
+
+  
+Overview: 
+The MyAladia Platform is a feature-rich application built with modular, reusable components. It incorporates modern design principles and integrates seamlessly with tools like NuxtJS and Storybook for streamlined development and documentation.
+
+### Tasks Completed
+#### Authentication Components
+- Developed a suite of reusable authentication components:
+
+    - Login: A reusable component for user login functionality.
+    - Registration: A reusable component for user registration.
+    - Forgot Password: A workflow to handle password recovery.
+    - Code Verification: A reusable component for code verification during authentication.
+    - Password Reset: A component to enable users to reset their passwords.
+-  Education Feature
+   - Created a dedicated, reusable component (or set of components) 
+- Ensured adherence to library best practices for scalability and maintainability.
+- Integration with NuxtJS and Storybook
+- Set up a new NuxtJS project for seamless development.
+- Integrated Storybook to document and provide examples of reusable components.
+#### Reusable Components
+- Incorporated Element Plus (via the @element-plus/nuxt package) as part of the reusable components strategy.
+- Demonstrated effective utilization of external libraries to enhance development efficiency.
+### Atomic Design Principles and Design Tokens (Bonus)
+ - Applied Atomic Design Principles to ensure components are structured hierarchically:
+    - Atoms: Basic building blocks of the UI.
+    - Molecules: Combinations of atoms working together.
+    - Organisms: Groups of molecules forming distinct sections of the UI.
+    Incorporated Design Tokens to maintain consistent styling and theming across the platform.
+
+
+
+
+
+# MyAladia Platform part 2
+
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
