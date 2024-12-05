@@ -2,6 +2,14 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+
+## Documentations
+
+Look at the [storebook documentations](https://storybook.js.org/docs) to see more 
+
+Look at the [Element plus documentations](https://element-plus.org/en-US/)
+
+
 ## Setup
 
 Make sure to install the dependencies:
@@ -22,6 +30,7 @@ bun install
 
 
 
+
 ## Screenshot
 
 ##### Login Page
@@ -32,7 +41,7 @@ bun install
 ##### Registration Page
 ![image](https://github.com/user-attachments/assets/8f9dbf28-9ac9-4a8f-bc73-eb4fb304d217)
 
-##### Reset Password Page
+##### Forget Password Pages
 
 ![image](https://github.com/user-attachments/assets/37892404-818b-4759-a853-b3308b60ebee)
 
@@ -62,6 +71,9 @@ bun install
 
 ![image](https://github.com/user-attachments/assets/d553d6e3-ea64-458d-97b8-478ebd75f189)
 
+
+## Demonstrations 
+[Demo](https://share.vidyard.com/watch/XaStYomAWA1WnJT6nJpw4M?) 
 
 
 
