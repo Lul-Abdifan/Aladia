@@ -8,7 +8,7 @@
         class="w-full h-full md:col-span-1 bg-secondary md:py-12 py-6 xl:px-20 lg:px-16 md:px-10 px-14 text-gray-700 rounded-l-3xl"
       >
         <div class="pt-4 text-medium">Email</div>
-        <TextInput :placeholder="emailPlaceholder" type="email" />
+        <TextInput placeholder="you@example.com" type="email" />
 
         <NuxtLink to="/auth/code-verification">
           <Button
