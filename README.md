@@ -50,6 +50,20 @@ bun install
 ![image](https://github.com/user-attachments/assets/dbfddd77-f635-490e-83d3-2d353c73694f)
 
 
+## The Components from StoryBook
+##### Atoms from storybook
+![image](https://github.com/user-attachments/assets/0eb78b76-9cd7-4f41-b13f-fcef393b7027)
+
+##### Molecules from storybook
+
+![image](https://github.com/user-attachments/assets/42325427-4704-44d0-9757-511619bb9e93)
+
+##### Organisms from storybook
+
+![image](https://github.com/user-attachments/assets/d553d6e3-ea64-458d-97b8-478ebd75f189)
+
+
+
 
 
 
