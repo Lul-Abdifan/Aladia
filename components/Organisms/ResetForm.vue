@@ -5,31 +5,41 @@
   >
     <div class="w-full md:grid md:grid-cols-2 rounded-3xl bg-white">
       <!-- Left Side (Reset Password Form) -->
-      <form class="w-full md:col-span-1 bg-[#F9F9F9] md:py-12 py-6 px-14 md:px-10 lg:px-16 xl:px-20 rounded-l-3xl">
+      <form
+        class="w-full md:col-span-1 bg-[#F9F9F9] md:py-12 py-6 px-14 md:px-10 lg:px-16 xl:px-20 rounded-l-3xl"
+      >
         <div class="pt-4">{{ newPasswordLabel }}</div>
         <PasswordInput :placeholder="newPasswordPlaceholder" />
 
         <div class="pt-8">{{ confirmPasswordLabel }}</div>
         <PasswordInput :placeholder="confirmPasswordPlaceholder" />
-
-        <Button
-          class="mt-12 w-full"
-          :bgColor="buttonBgColor"
-          :textColor="buttonTextColor"
-          :hoverBgColor="buttonHoverBgColor"
-          :size="buttonSize"
-          :rounded="buttonRounded"
-        >
-          {{ buttonLabel }}
-        </Button>
+        <nuxt-link to="/education">
+          <Button
+            class="mt-12 w-full"
+            :bgColor="buttonBgColor"
+            :textColor="buttonTextColor"
+            :hoverBgColor="buttonHoverBgColor"
+            :size="buttonSize"
+            :rounded="buttonRounded"
+          >
+            {{ buttonLabel }}
+          </Button>
+        </nuxt-link>
 
         <div class="w-full flex text-black rounded-l-3xl mt-7">
-          <NuxtLink to="/" class="w-full text-center text-primary mx-auto text-sm">
+          <NuxtLink
+            to="/"
+            class="w-full text-center text-primary mx-auto text-sm"
+          >
             {{ returnToLoginLabel }}
           </NuxtLink>
         </div>
 
-        <Image :src="logoSrc" :alt="logoAlt" customClass="relative mt-12 mx-auto w-24" />
+        <Image
+          :src="logoSrc"
+          :alt="logoAlt"
+          customClass="relative mt-12 mx-auto w-24"
+        />
       </form>
 
       <!-- Right Side (Using RightSide Molecule) -->
@@ -61,7 +71,8 @@ export default {
   props: {
     bgImage: {
       type: String,
-      default: "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
+      default:
+        "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
     },
     newPasswordLabel: {
       type: String,
@@ -121,7 +132,8 @@ export default {
     },
     rightSideDescription: {
       type: String,
-      default: "Please enter your new password and confirm it to reset your password.",
+      default:
+        "Please enter your new password and confirm it to reset your password.",
     },
     rightSideImageSrc: {
       type: String,
@@ -145,5 +157,4 @@ export default {
 
 <style scoped>
 /* Optional styling for the password field eye icon if needed */
-
 </style>

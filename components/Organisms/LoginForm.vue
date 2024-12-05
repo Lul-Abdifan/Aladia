@@ -5,9 +5,11 @@
   >
     <div class="w-full md:grid md:grid-cols-2 rounded-3xl bg-white">
       <!-- Left Side -->
-      <form class="w-full md:col-span-1 bg-secondary md:py-12 py-6 px-medium md:px-10 lg:px-16 xl:px-20 rounded-l-3xl font-inter">
+      <form
+        class="w-full md:col-span-1 bg-secondary md:py-12 py-6 px-medium md:px-10 lg:px-16 xl:px-20 rounded-l-3xl font-inter"
+      >
         <div class="pt-4 text-medium">Email</div>
-        <TextInput placeholder="you@example.com" />
+        <TextInput type="email" placeholder="you@example.com" />
 
         <div class="pt-8 flex justify-between text-medium">
           <span>Password</span>
@@ -54,7 +56,6 @@
     </div>
   </div>
 </template>
-
 
 <script>
 import TextInput from "@/components/Atoms/TextInput.vue";

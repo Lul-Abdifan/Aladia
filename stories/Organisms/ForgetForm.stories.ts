@@ -59,7 +59,8 @@ export const Default: Story = {
     `,
   }),
   args: {
-    bgImage: "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
+    bgImage:
+      "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
     logoImageSrc: "public/auth/aladia.png",
     logoImageAlt: "Aladia Logo",
     rightSideImageSrc: "public/auth/signin-img.png",
@@ -88,7 +89,8 @@ export const LoginCustom: Story = {
     `,
   }),
   args: {
-    bgImage: "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
+    bgImage:
+      "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
     logoImageSrc: "public/auth/aladia.png",
     logoImageAlt: "Aladia Logo",
     rightSideImageSrc: "public/auth/aladia.png",

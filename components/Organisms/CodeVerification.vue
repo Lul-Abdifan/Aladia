@@ -17,7 +17,7 @@
           placeholder="Enter the code"
           maxlength="10"
           class="w-full mt-8"
-          :error-message="otpError"
+          type="password"
         />
 
         <NuxtLink to="/auth/reset-password">

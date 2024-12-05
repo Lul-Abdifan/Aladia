@@ -5,12 +5,14 @@
   >
     <div class="w-full md:grid md:grid-cols-2 rounded-3xl bg-white">
       <!-- Left Side -->
-      <form class="w-full md:col-span-1 bg-[#F9F9F9] md:py-12 py-6 px-14 md:px-10 lg:px-16 xl:px-20 rounded-l-3xl">
+      <form
+        class="w-full md:col-span-1 bg-[#F9F9F9] md:py-12 py-6 px-14 md:px-10 lg:px-16 xl:px-20 rounded-l-3xl"
+      >
         <div class="pt-4 text-medium">Full Name</div>
         <TextInput placeholder="John Doe" />
 
         <div class="pt-8 text-medium">Email</div>
-        <TextInput placeholder="you@example.com" />
+        <TextInput type="email" placeholder="you@example.com" />
 
         <div class="pt-8 text-medium">Password</div>
         <PasswordInput placeholder="**********" />
@@ -34,7 +36,11 @@
           <nuxt-link to="/" class="text-primary text-sm">Login</nuxt-link>
         </div>
 
-        <Image :src="logoImageSrc" :alt="logoImageAlt" customClass="relative mt-12 mx-auto w-24" />
+        <Image
+          :src="logoImageSrc"
+          :alt="logoImageAlt"
+          customClass="relative mt-12 mx-auto w-24"
+        />
       </form>
 
       <!-- Right Side (Using RightSide Molecule) -->
@@ -83,7 +89,7 @@ export default {
     rightSideImageSrc: {
       type: String,
       required: true,
-      default: "/auth/aladia.png",
+      default: "/auth/signin-img.png",
     },
     rightSideImageAlt: {
       type: String,
@@ -104,6 +110,4 @@ export default {
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
