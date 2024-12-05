@@ -6,19 +6,18 @@
     <div class="w-full md:grid md:grid-cols-2 rounded-3xl bg-white">
       <!-- Left Side -->
       <form class="w-full md:col-span-1 bg-[#F9F9F9] md:py-12 py-6 px-14 md:px-10 lg:px-16 xl:px-20 rounded-l-3xl">
-        <div class="pt-4">Full Name</div>
+        <div class="pt-4 text-medium">Full Name</div>
         <TextInput placeholder="John Doe" />
 
-        <div class="pt-8">Email</div>
+        <div class="pt-8 text-medium">Email</div>
         <TextInput placeholder="you@example.com" />
 
-        <div class="pt-8">Password</div>
+        <div class="pt-8 text-medium">Password</div>
         <PasswordInput placeholder="**********" />
 
-        <div class="pt-8">Confirm Password</div>
+        <div class="pt-8 text-medium">Confirm Password</div>
         <PasswordInput placeholder="**********" />
 
-        <!-- Updated Button usage -->
         <Button
           class="mt-12"
           :bgColor="'bg-primary'"
@@ -35,17 +34,17 @@
           <nuxt-link to="/" class="text-primary text-sm">Login</nuxt-link>
         </div>
 
-        <Image src="/auth/aladia.png" alt="Aladia Logo" customClass="relative mt-12 mx-auto w-24" />
+        <Image :src="logoImageSrc" :alt="logoImageAlt" customClass="relative mt-12 mx-auto w-24" />
       </form>
 
       <!-- Right Side (Using RightSide Molecule) -->
       <RightSide
         :title="'Welcome to Aladia!'"
-        :description="'Sign up to get started with our Programming School portal.!'"
-        :imageSrc="'/auth/signin-img.png'"
-        :imageAlt="'Signup Illustration'"
-        :imageWidth="300"
-        :imageHeight="100"
+        :description="'Sign up to get started with our Programming School portal!'"
+        :imageSrc="rightSideImageSrc"
+        :imageAlt="rightSideImageAlt"
+        :imageWidth="rightSideImageWidth"
+        :imageHeight="rightSideImageHeight"
       />
     </div>
   </div>
@@ -66,20 +65,45 @@ export default {
     Image,
     RightSide,
   },
-  data() {
-    return {
-      bgImage:
-        "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
-    };
+  props: {
+    bgImage: {
+      type: String,
+      required: true,
+    },
+    logoImageSrc: {
+      type: String,
+      required: true,
+      default: "/auth/aladia.png",
+    },
+    logoImageAlt: {
+      type: String,
+      required: true,
+      default: "Aladia Logo",
+    },
+    rightSideImageSrc: {
+      type: String,
+      required: true,
+      default: "/auth/aladia.png",
+    },
+    rightSideImageAlt: {
+      type: String,
+      required: true,
+      default: "Signup Illustration",
+    },
+    rightSideImageWidth: {
+      type: Number,
+      required: true,
+      default: 300,
+    },
+    rightSideImageHeight: {
+      type: Number,
+      required: true,
+      default: 100,
+    },
   },
 };
 </script>
 
 <style scoped>
-.eye-open {
-  transform: rotate(0deg);
-}
-.eye-closed {
-  transform: rotate(180deg);
-}
+
 </style>

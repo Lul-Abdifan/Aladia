@@ -18,7 +18,6 @@
 
         <PasswordInput placeholder="**********" />
 
-        <!-- Button with Dynamic Props -->
         <Button
           class="mt-large"
           :bgColor="'bg-primary'"
@@ -36,21 +35,26 @@
           </nuxt-link>
         </div>
 
-        <Image src="/auth/aladia.png" alt="Aladia Logo" customClass="relative mt-12 mx-auto w-24" />
+        <Image
+          :src="logoImageSrc"
+          :alt="logoImageAlt"
+          customClass="relative mt-12 mx-auto w-24"
+        />
       </form>
 
-      <!-- Right Side (Using RightSide Molecule) -->
+      <!-- Right Side -->
       <RightSide
         :title="'Welcome to Aladia!'"
         :description="'Sign into our Programming School portal. so we can get started!'"
-        :imageSrc="'/auth/signin-img.png'"
-        :imageAlt="'Signin Illustration'"
-        :imageWidth="300"
-        :imageHeight="100"
+        :imageSrc="rightSideImageSrc"
+        :imageAlt="rightSideImageAlt"
+        :imageWidth="rightSideImageWidth"
+        :imageHeight="rightSideImageHeight"
       />
     </div>
   </div>
 </template>
+
 
 <script>
 import TextInput from "@/components/Atoms/TextInput.vue";
@@ -67,20 +71,41 @@ export default {
     Image,
     RightSide,
   },
-  data() {
-    return {
-      bgImage:
-        "https://res.cloudinary.com/dr8ozjurp/image/upload/v1702039103/Rectangle_4883_qk9nw2.png",
-    };
+  props: {
+    bgImage: {
+      type: String,
+      required: true,
+    },
+    logoImageSrc: {
+      type: String,
+      required: true,
+      default: "/auth/aladia.png",
+    },
+    logoImageAlt: {
+      type: String,
+      required: true,
+      default: "Aladia Logo",
+    },
+    rightSideImageSrc: {
+      type: String,
+      required: true,
+      default: "/auth/signin-img.png",
+    },
+    rightSideImageAlt: {
+      type: String,
+      required: true,
+      default: "Signin Illustration",
+    },
+    rightSideImageWidth: {
+      type: Number,
+      required: true,
+      default: 300,
+    },
+    rightSideImageHeight: {
+      type: Number,
+      required: true,
+      default: 100,
+    },
   },
 };
 </script>
-
-<style scoped>
-.eye-open {
-  transform: rotate(0deg);
-}
-.eye-closed {
-  transform: rotate(180deg);
-}
-</style>
